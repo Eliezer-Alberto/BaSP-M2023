@@ -12,7 +12,7 @@ Basically, the project consists of recreating on an html file, a **Landing Page*
 To begin with the presentation of the project, its body is made up of a header containing the name **MegaRocket** that appears as a logotype.
 
 
-In the same part, on the left side you will see this botton as the one below.      
+In the header, on the left side there is also a botton such as the one below.      
 
 ![Menu](https://user-images.githubusercontent.com/127459363/228161599-d0d28214-8916-40a4-a9a4-60cb23f1a0f3.png)
 
@@ -22,16 +22,16 @@ It unfolds an **aside** section, that contains a Menu with some options to choos
 - Log In 
 - Info
 
-and some contact information; an email, a phone number and an address.
+and some contact information; *an email, a phone number and an address.*
 
 ## Main
 
-The **Main** is divided into *sections.* The first one shows more contents in a text format. Elements *h2, h3* and *p* were used, accompained by the following image.
+The **Main** is divided into *sections.* The first one shows contents in a text format which is accompained by the following image.
 
  ![training](https://user-images.githubusercontent.com/127459363/228375643-91bcc6f4-7a77-4030-8fce-a36c122a75e6.png)
 
 
-Then there is another *section* element in which I included some subtitles with a  descriptive text below each one. 
+The following *section* I included some subtitles with a descriptive text below each one. 
 
 Theese are:
 
@@ -47,29 +47,31 @@ Theese are:
 
   ![Membership](https://user-images.githubusercontent.com/127459363/228382580-0ec7ae2d-2b34-47e4-8844-5653b088e49f.png)
 
-and **Suggestions**
+**Suggestions**
+
 ![suggestion](https://user-images.githubusercontent.com/127459363/228382741-179c3d5b-2b5b-49ec-92e5-41813ac29957.png)
 
 
 The following *section* 
-has a comunnicative connotation. Just in case someone want to ask any question
- Some data is required. 
+has a comunnicative connotation. Just in case someone has any question.
+
+Some data is required. 
 
 Such as;
 
 - Name
 - Surname
 - E-mail Address
-- Select a motive (options)
+- Select a motive (dropdown options)
 - Box to leave a message.
 
 with two buttons **Clear** and **Send**.
 
-Getting closer to the final part of the **Main**. There are two last *Sections*; the one is under the subtittle **Our History** with a brief text and the other one is under the subtittle **Our activities**, in which I made a list of the different activities that the gym provides in a general way at fisrt but also the ones that each membership includes.
+Getting closer to the final part of the **Main**. There are two last *Sections*; the first one is under the subtittle **Our History** with a brief text below and the other one is under the subtittle **Our activities**, in which there is a list of the different activities that the gym provides, in a general way at fisrt but also the ones that each membership includes.
 
 ## Footer
 
-The footer contains no more than the **Copyright** information on the left, and on the right there are the social network´s icons with their respective links. 
+The **Footer** contains no more than the **Copyright** information on the left, and on the right there are these social network´s icons with their respective links. 
 
 ![facebook](https://user-images.githubusercontent.com/127459363/228396549-ea402245-ab12-45eb-ad2a-6b457f4f7465.png)
 
@@ -78,4 +80,4 @@ The footer contains no more than the **Copyright** information on the left, and 
 ![linkedin](https://user-images.githubusercontent.com/127459363/228396745-6e3c260a-0a15-4841-9b3e-276f3cdcac9f.png)
 
 
-*That was all for the* **Week-02** of **BaSP-M2023**.
+*That was all for the* **Week-02** *of* **BaSP-M2023**.
