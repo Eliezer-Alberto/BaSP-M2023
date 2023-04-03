@@ -1,8 +1,8 @@
 /* Body */
 body {
-    font-family: Roboto, 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif'
-    width: 1512
-    heigh: 2691;    
+    font-family: Roboto, 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    width: 1512px;
+        
 
 
 }
@@ -20,7 +20,6 @@ header {
     height: 1512px;
     margin: 58px 89px;
 
-
 }
 
 .btn-menu {  
@@ -30,49 +29,162 @@ header {
     margin: 55px 32px
 }
 
+/************ Aside ************/
+.side-bar {
     
+    text-align: center;
+    width: 427px;
+    height: 1068px;
+    padding: 15px;
+    margin: 23px;
+    font-size: 32px;
+    
+}
 
+.side-bar h3 {
+    text-align: center;
+    font-size: 32px;
+}
 
+.side-bar li {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    background-color: #51A884;
+}
 
+.side-bar h4 {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+}
 
-.box-1 {
-    display: block;
-   
+.side-bar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-contact {
+    display: inline-block;
+    width: 370px;
+    height: 409;
+    background-color: #51A884;
+    font-size: 27px;
+
+}
+
+    
+/************ Main ************/
+
+.getfit {
+    display: inline-block;
     background-color: #D9D9D9;
     width: 1512px;
     height: 471px;
 }
 
-.training {
-    display: inline;
-    box-align: right;
+.getfit h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.getfit h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.getfit p {
+    font-size: 23px;
+    width: 900px;
+    margin-right: 394px;
+    
+}
+.strong img {
+    display: inline-block;
+    margin-top: 118px;
+    margin-right: 63px;
+    
+}
+
+/* Options */
+
+.option-containers {
+    background-color: #AACE9B;
+    height: 691px;
 }
 
 .options {
-    display: inline;
-    background-color: #AACE9B;
-
+    display: inline-block; 
+    font-size: 30px;
+    width: 623px;
 }
+
+
+.options img, h3 {
+    display: inline-block;
+}
+
+/* Forms */
 
 .form-group {
     width: 1512;
     height: 515;
     background-color: #373867;
     color: #fff;
-
-
+    box-sizing: border-box;
 }
 
-.form-group textarea {
-    padding-bottom: 30px;
+.form-group h3 {
+    margin-top: 42px;
+    margin-left: 80px;
+    font-size: 60px;
+    
 }
 
 .form-group input {
     display: block;
-    padding: 5px;
-    width: 50px;
+    padding: 10px;
+    width: 392.7px;
+    margin: 30px;
+    margin-left: 119px;
+    font-size: 14px;
+}
+
+.form-group select {
+    display: block;
+    padding: 10px;
+    width: 415px;
+    margin: 30px;
+    margin-top: 44px;
+    margin-left: 119px;
+    margin-bottom: 180px;
+}
+
+.form-group textarea {
+    display: block;
+    padding: 0; 
+    margin: 30px;
+    margin-top: 44px;
+    margin-right: 158px;
+    width: 745px;
+    height: 174.7px;
+}
+
+.form-group img {
+    position: relative;
+    display: inline;
+    margin: 220px;
+    margin-bottom: 95px;
+    margin-top: 58px;
+    margin-left: 60px;
+    margin-right: 198px;
 
 }
+.form-group div {
+    float: left;
+    background-color: #373867;
+}
+
+/* History */
 
 .history {
     display: inline-block;
@@ -85,19 +197,29 @@ header {
     text-transform: uppercase;
     font-size: 50px;
     font-weight: bolder;
+    margin-left: 48px;
+    margin-top: 19px;
     
 }
 
 .history p{
     font-weight: bolder;
     font-size: 50px;
+    margin-left: 76px;
+    margin-bottom: ;
 }
 
-.activities {
-    float: inline-block;
+/* Activities */
+
+.activities div {
+    display: inline-block;
     font-size: 24px;
-    
+    background-color: #D9D9D9;
 }
+
+
+/************ Footer ************/
+
 
 .footer {
     background-color: #AACE9B;
