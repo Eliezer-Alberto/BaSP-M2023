@@ -1,9 +1,7 @@
 # BaSP-2023
 ## Week-02
-This is a description of the project that was carried out in the Week-02.
 
-
-Basically, the project consists of recreating on an html file, a **Landing Page** of a web site that was developed in the last week in a teamwork, using HTML precisely. 
+The project consists on recreating on an html file, a **Landing Page** of a web site that was developed in the last week in a teamwork, using HTML precisely. 
  
  In order to make this task, a lot of related material was given about HTML, Git and Github; these last ones are tools that allow me to save code versions on a repository. Thanks to that, I can save my progress on the project and I also can share it with others users.
  
@@ -80,4 +78,12 @@ The **Footer** contains no more than the **Copyright** information on the left, 
 ![linkedin](https://user-images.githubusercontent.com/127459363/228396745-6e3c260a-0a15-4841-9b3e-276f3cdcac9f.png)
 
 
-*That was all for the* **Week-02** *of* **BaSP-M2023**.
+*That was all for the* **Week-02** *of* **BaSP-M2023**
+
+
+## Week-03
+## Stylesheet
+By this stage, there were added mostly updates concerning to the styling of the previous index.html descripted above.
+
+In order to give it all the styles, it was applied through the use of external CSS stylesheet on a separated file and it take the style of the design created on Figma. 
+
