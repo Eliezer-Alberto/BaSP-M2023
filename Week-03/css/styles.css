@@ -28,7 +28,7 @@ header {
 }
 
 /************ Aside ************/
-.side-bar {
+aside {
     width: 427px;
     padding: 15px;
     margin: 30px;
@@ -70,20 +70,26 @@ header {
     text-align: center;
 }
 
-.sidebar-menu a {
+.sidebar-menu ul {
     border: #373867;
     border-top: 10px;
+    display: block;
+    text-align: center;
+    padding-left: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
 
 }
 
 .sidebar-contact {
     width: 370px;
-    padding: 0px;
+    height: 409px;
+    padding: 15px;
     background-color: #51A884;
     color: #fff;
     font-size: 27px;
     margin-left: 23px;
-    margin: 30px;
+   
 }
 
 .contact-img {
@@ -93,11 +99,14 @@ header {
 }
 
 .contact-id {
-    position:relative;
-    padding: 0px;
-    left:40px;
+    position: relative;
+    left: 40px;
     display: inline-block;
-    width: 100%;
+    width: 40%;
+}
+
+.contact-id li{
+    font-size: 27px;
 }
 
 .sidebar-contact img {
