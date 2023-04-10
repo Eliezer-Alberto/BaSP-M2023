@@ -1,64 +1,72 @@
 /************ Body ************/
 
 body {
-    display: flexbox;
-    width: 390px;
-    height: 3306px;
+    width: 100vw;
+    
 }
 
 /************ Main ************/
 
 header {
     background-color: #373867;
-    width: 390px;
     height: 60px;
-    display: flexbox;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
 }
 
 .header-logo {
-    display: flexbox;
-    text-align: right;
-    justify-content: center;
+    display: flex;
+    height: fit-content;
+
+    
 }
 
 .header-logo img {
-    display: flexbox;
+    display: flex;
     justify-content: center;
-    padding: 0px;
+    padding: 10px;
 }
 
 .btn-menu {
-    text-align: left;
-    justify-content: center;
+    justify-content:flex-start;
     width: 44px;
     height: 34px;
     padding-top: 5px;
 }
 
-/************ Aside ************/
+/************ Aside-Box ************/
 
 aside {
-    display:flexbox;
-    width: 390px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     height: 847px;
     background-color: #DCEEE6;
+}
+
+.side-bar {
+    display: flex;
+    justify-content: center;
+
 }
 
 .side-bar h3 {
     text-align: center;
     font-size: 32px;
-    padding: 22px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .side-bar img {
-    box-align: right;
-    justify-content: end;
+    
+    display: flex
+    
 }
 
 .menu-li {
-    display: block;
+    display: flex;
     justify-content: center;
     text-align: center;
     background-color: #51A884;
@@ -77,7 +85,8 @@ aside {
 }
 
 .sidebar-contact {
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #51A884;
@@ -108,7 +117,7 @@ aside {
     margin: 10px;
 }
 
-/************ Get-Fit ************/
+/************ Get-Fit-Box ************/
 
 .strong {
     background-color: #D9D9D9;
@@ -146,4 +155,173 @@ aside {
     margin-left: 70px;
     margin-top: 0px;
     padding-top: 0px;
+}
+
+/************ Options-Box ************/
+
+.option-container {
+    background-color: #AACE9B;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.option-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.options h3 {
+    border:darkred;
+    padding: 10px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.options p {
+    display: none;
+    color:#fff
+}
+
+/************ Forms-Box ************/
+
+.box-forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #373867;
+}
+
+.form-group h3 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#fff;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.form-group textarea {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.form-group img {
+    display: flex;
+    flex-direction: row;
+    height: 38px;
+    width: 90px;
+    
+}
+
+.form-data input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form-data select {
+    display: flex;
+}
+
+/************ History-Box ************/
+
+.box-history {
+    display: flex;
+    background-color: #AACE9B;
+}
+
+.history h3 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+}
+
+.history p {
+    font-size: 24px;
+    text-align: justify;
+    padding: 25px;
+    color: #fff;
+}
+
+/************ Activities-Box ************/
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+}
+
+.activities-box {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.activities-box h4 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.activities-li {
+    display: flex;
+    flex-direction:column;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.activities h4 {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.memberships-li {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/************ Footer-Box ************/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #AACE9B;
+}
+
+.footer h5 {
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 5px;   
+}
+
+.social img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 34px;
+    height: 34px;
 }
