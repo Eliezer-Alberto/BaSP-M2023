@@ -28,12 +28,13 @@ header {
 }
 
 /************ Aside ************/
-aside {
+
+.side-bar {
     width: 427px;
-    padding: 15px;
-    margin: 30px;
+    
+    height: 1068px;    
     font-size: 32px;
-    background-color: #fff;
+    background-color: #E5F2ED;
 }
 
 .side-bar h3 {
@@ -43,12 +44,20 @@ aside {
 }
 .side-bar a {
     text-decoration: none;
-
+    
 }
 .side-bar li {
     font-size: 32px;
     background-color: #51A884;
+    text-decoration: none;
 }
+
+.list-menu li {
+    border: #373867;
+    border-top: 10px;
+    text-decoration: none;
+}
+
 
 .side-bar h4 {
     text-align: center;
