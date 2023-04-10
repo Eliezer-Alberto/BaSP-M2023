@@ -11,62 +11,62 @@
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <head>
-    <body>    
+    <body class="body">    
         <header>
-            <h1 class="btn-menu">
-                <img src="../Assets/Images/Icon.png" alt="a menu icon">
-            </h1>
             <h1 class="header-logo">
                 <img src="../Assets/Images/Logo.png" alt="MegaRocket">
             </h1>
+            <h1 class="btn-menu">
+                <img src="../Assets/Images/Icon.png" alt="a menu icon">
+            </h1>
         </header>
-            <aside>
-                <div class="side-bar">
-                    <h3>
-                        Menu
-                    </h3>
-                    <img src="../Assets/Images/Icon-2.png">
-                </div>    
-                <nav>
-                    <div class="sidebar-menu">
-                        <ul>
-                            <li class="menu-li">
-                                <a href="#">Home</a>
+        <aside>
+            <div class="side-bar">
+                <h3>
+                    Menu
+                </h3>
+                <img src="../Assets/Images/Icon-2.png">
+            </div>    
+            <nav>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="menu-li">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="#">Sing Up</a>
+                        </li>
+                        <li class="menu-li">   
+                            <a href="#">Log In</a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="#">Info</a>
+                        </li> 
+                    </ul>       
+                </div>
+                <div class="sidebar-contact">
+                    <h4>    
+                        Contact Us
+                    </h4>
+                    <div class="contact-img"> 
+                        <ul class="contact-id">      
+                            <img src="../Assets/Images/mail.png" alt="a letter icon">
+                            <li>
+                                information@untitled.tld
                             </li>
-                            <li class="menu-li">
-                                <a href="#">Sing Up</a>
+                            <img src="../Assets/Images/Cellphone.png" alt="a celphone icon">
+                            <li>        
+                                (000) 00000-0000
                             </li>
-                            <li class="menu-li">   
-                                <a href="#">Log In</a>
-                            </li>
-                            <li class="menu-li">
-                                <a href="#">Info</a>
+                            <img src="../Assets/Images/Address.png" alt="an address icon">
+                            <li>     
+                                1233 Somewhere Road #8254Nashville, TN 00000-0000
                             </li> 
-                        </ul>       
+                        </ul>
                     </div>
-                    <div class="sidebar-contact">
-                        <h4>    
-                            Contact Us
-                        </h4>
-                        <div class="contact-img"> 
-                            <ul class="contact-id">      
-                                <img src="../Assets/Images/mail.png" alt="a letter icon">
-                                <li>
-                                    information@untitled.tld
-                                </li>
-                                <img src="../Assets/Images/Cellphone.png" alt="a celphone icon">
-                                <li>        
-                                    (000) 00000-0000
-                                </li>
-                                <img src="../Assets/Images/Address.png" alt="an address icon">
-                                <li>     
-                                    1233 Somewhere Road #8254Nashville, TN 00000-0000
-                                </li> 
-                            </ul>
-                        </div>
-                    </div>
-                </nav>    
-            </aside>    
+                </div>
+            </nav>    
+        </aside>    
         <main>
             <section class="strong">
                 <div class="get-fit">
@@ -88,7 +88,7 @@
                 </div>
                 <img src="../Assets/Images/training.png" alt="a person training image">
             </section>  
-            <section class="option-containers">
+            <section class="option-container">
                 <div class="options">
                     <img src="../Assets/Images/Appointment.png" alt="an appointment icon">
                     <h3>
@@ -135,7 +135,7 @@
                     <h3>
                         You have questions, ask away and get your answers
                     </h3>
-                    <div>
+                    <div class="form-data">
                         <input type="text" placeholder="Name"> 
                         <input type="text" placeholder="Surname">
                         <input type="text" placeholder="E-mail adress">     
@@ -175,48 +175,48 @@
                  </div>
             </section>
             <section class="activities">
-                <div>
+                <div class="activities-box">
                     <h4>
                         Our activities
                     </h4>
                     <ol>
-                        <li>Crossfit</li>
-                        <li>Spinning</li>
-                        <li>Functional</li>
-                        <li>Boxing</li>
-                        <li>Weightlifting</li>
+                        <li class="activities-li">Crossfit</li>
+                        <li class="activities-li">Spinning</li>
+                        <li class="activities-li">Functional</li>
+                        <li class="activities-li">Boxing</li>
+                        <li class="activities-li">Weightlifting</li>
                     </ol>
                 </div>
-                <div>
+                <div class="memberships">
                     <h4>
                         Black Membership
                     </h4>
-                    <ul>
+                    <ul class="memberships-li">
                         <li>Free access to BB class</li>
                         <li>Free access to classes without making appointment</li>
                         <li>Personalized follow up with personal trainer</li>
                         <li>Grid display</li>
                     </ul>
                 </div>
-                <div>
+                <div class="memberships">
                     <h4>
                         Classic Membership
                     </h4>
-                    <ul>
+                    <ul class="memberships-li">
                         <li>Free pass to weight room</li>
                         <li>Monitored by a personal coach</li>
                         <li>Displayed schedule</li>
                     </ul>
                 </div>
-                <div>
+                <div class="memberships">
                     <h4>
                         Only Classes mempership
                     </h4>
-                    <ul>
+                    <ul class="memberships-li">
                         <li>Free pass to classes with prior appointment</li>
                         <li>Displayed schedule</li>
                     </ul>
-                </div>
+                </div>   
             </section>
         </main>
             <footer class="footer">
@@ -224,9 +224,9 @@
                     Copyright © 2023 MegaRocket SA. All rights reserved.
                 </h5> 
                 <div class="social">
-                <a href="https://www.facebook.com/"><img src="../Assets/Images/Facebook.png" alt="Facebooc icon"></a>
-                <a href="https://www.instagram.com/"><img src="../Assets/Images/Instagram.png" alt="Instagram icon"></a>
-                <a href="https://www.linkedin.com/"><img src="../Assets/Images/LinkedIn.png" alt="LinkedIn icon"></a>
+                    <a href="https://www.linkedin.com/"><img src="../Assets/Images/LinkedIn.png" alt="LinkedIn icon"></a>
+                    <a href="https://www.facebook.com/"><img src="../Assets/Images/Facebook.png" alt="Facebooc icon"></a>
+                    <a href="https://www.instagram.com/"><img src="../Assets/Images/Instagram.png" alt="Instagram icon"></a>
                 </div>   
             </footer>
         </body>
