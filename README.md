@@ -87,3 +87,10 @@ By this stage, there were added mostly updates concerning to the styling of the 
 
 In order to give it all the styles, it was applied through the use of external CSS stylesheet on a separated file and it take the style of the design created on Figma. 
 
+## Week-04
+## Stylesheet and Media Queries.
+
+By the time of the Week-04 there were added some changes to the stylesheet created on the previous week. In this case, it was requested to use the Flexbox tool and it was applied to the same stylesheet mentioned before.
+
+Regarding the new changes that were added to this project, they have to do with the Media Queries. It is a very useful tool that allow the webpage user, to use it from different devices because it configures different layouts throught the use of breakpoints; for Mobile first and then for other devices with a bigger screen.
+

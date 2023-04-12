@@ -525,9 +525,9 @@ aside {
     }
 }
 
-/************ Breakpoint 1024px ************/
+    /************ Breakpoint 1024px ************/
 
-/************ Header ************/
+    /************ Header ************/
 
 @media only screen and (min-width: 1024px) {
     
@@ -547,7 +547,7 @@ aside {
         margin-left: 12px;
     }
 
-/************ Header ************/    
+    /************ Header ************/    
 
     aside {
         display: flex;
@@ -799,6 +799,73 @@ aside {
         font-size: 24px;
     }
 
-
+    /************ Activities Section ************/
     
+    .activities-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    .activities-box h3 {
+        font-size: 30px;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    
+    .activities h4 {
+        font-size: 20px;
+        text-align: left;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+    .activity-list li {
+        font-size: 20px;
+        font-weight: normal;
+    }
+    
+    .memberships {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 15px;
+        padding-left: 70px;
+        padding-right: 50px;
+    }
+
+    /************ Footer  ************/
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #AACE9B;
+    }
+
+    .footer h5 {
+        font-size: 12px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 5px;   
+    }
+
+    .social img{
+        display: flex;
+        flex-direction: row;
+        padding: 0 16px;
+        align-self: center;
+        width: 34px;
+        height: 34px;
+        padding-top: 5px;
+    }
 }
