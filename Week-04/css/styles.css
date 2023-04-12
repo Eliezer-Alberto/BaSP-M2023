@@ -372,9 +372,7 @@ aside {
     }
 }
 
-/************ Get-Fit Section ************/
-
-@media only screen and (min-width: 600px) {
+    /************ Get-Fit Section ************/
     
     .get-fit {
         padding: 12px;
@@ -414,11 +412,8 @@ aside {
         margin: auto 30px;
         justify-content: center;
 }
-}
 
-/************ Options Section ************/
-
-@media only screen and (min-width: 600px) {
+    /************ Options Section ************/
 
     .option-container {
         background-color: #AACE9B;
@@ -465,11 +460,8 @@ aside {
         color:#fff;
         padding-left: 15px;
     }
-}
 
-/************ History Section ************/
-
-@media only screen and (min-width: 600px) {
+    /************ History Section ************/
     
     .history h3 {
         padding-top: 10px;
@@ -482,12 +474,9 @@ aside {
         color: #fff;
         font-size: 24px;
 }
-}
 
-/************ Activities Section ************/
+    /************ Activities Section ************/
 
-@media only screen and (min-width: 600px) {
-    
     .activities-box {
         display: flex;
         flex-direction: column;
@@ -523,7 +512,6 @@ aside {
         padding-left: 70px;
         padding-right: 50px;
     }
-}
 
     /************ Breakpoint 1024px ************/
 
@@ -631,8 +619,7 @@ aside {
         color: #fff;
         margin: 10px;
     }
-    
-    
+
     /************ Get-Fit Section ************/
     
     .get-fit {
@@ -783,7 +770,6 @@ aside {
         width: 90px;
         height: 37px;
     }
-    
 
     /************ History Section ************/
     
@@ -801,40 +787,24 @@ aside {
 
     /************ Activities Section ************/
     
-    .activities-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
+    .activities {
+        overflow-x: hidden;
+        font-size: 24px;
+        background-color: #D9D9D9;
+        margin: 0px;
+        flex-direction: row;
+        
     }
-    
-    .activities-box h3 {
-        font-size: 30px;
-        text-align: center;
-        text-transform: capitalize;
-        font-weight: bold;
-        padding-bottom: 10px;
-    }
+    .activities div {
+        float: left;
+        width: 25%;
+        box-sizing: border-box;
+        padding: 15px;
+    }   
     
     .activities h4 {
-        font-size: 20px;
-        text-align: left;
-        padding-bottom: 10px;
-        text-transform: capitalize;
-        font-weight: bold;
-    }
-
-    .activity-list li {
-        font-size: 20px;
-        font-weight: normal;
-    }
-    
-    .memberships {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        font-size: 15px;
-        padding-left: 70px;
-        padding-right: 50px;
+        border:#D9D9D9;
+        border-top: 10px;
     }
 
     /************ Footer  ************/
