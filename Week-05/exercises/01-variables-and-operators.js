@@ -7,6 +7,7 @@
     de ambos números en una 3er variable.*/
     
     console.log('1.a')
+    
     var firstNumber = 70;
     var secondNumber = 30;
     var result = (firstNumber + secondNumber); 
@@ -15,7 +16,7 @@
     /* b. Crear dos variables tipo String y concatenarlas guardando el resultado en una 3er variable. */
     
     console.log('1.b')
-    String = (nameOne, nameTwo);
+    
     var nameOne = 'Eliezer ';
     var nameTwo = 'Alberto ';
     var namesResult = (nameOne + nameTwo);
@@ -25,7 +26,7 @@
     letras del string) guardando el resultado de la suma en una 3er variable (utilizar lenght). */
 
     console.log('1.c')
-    String = (nameA + nameB);
+    
     var nameA = 'Joaquin';
     var nameB = 'Lucho'; 
     console.log('The length of the variable nameA is: ' + nameA.length);
