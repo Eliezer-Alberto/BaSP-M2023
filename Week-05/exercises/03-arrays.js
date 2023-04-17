@@ -1,4 +1,4 @@
-/* 2. Arrays */
+/* 3. Arrays */
 
     console.log('Exercise 3 - Arrays');
 

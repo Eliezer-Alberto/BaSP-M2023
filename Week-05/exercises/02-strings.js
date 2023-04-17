@@ -7,6 +7,7 @@
     convertir todo el texto en mayúscula (utilizar toUpperCase). */
     
     console.log('2.a')
+    
     var upName = 'radium rocket';
     console.log(upName);
     console.log(upName.toUpperCase());
@@ -16,6 +17,7 @@
     en una nueva variable (utilizar substring) */    
     
     console.log('2.b') 
+    
     var nickName = 'Albertirry';
     console.log(nickName);
     var resultFive = (nickName.substring(0, 5));
@@ -26,6 +28,7 @@
     nueva variable (utilizar substring). */
     
     console.log('2.c')
+    
     var nameOne = 'Radium Rocket';
     console.log(nameOne);
     var resultThree = (nameOne.substring(10, 13));
@@ -37,6 +40,7 @@
     toLowerCase y el operador +). */
     
     console.log('2.d')
+    
     var soft = 'softwareDev';
     var softWare = soft.substring(0,1).toUpperCase(0) + (soft.substring(1,11).toLowerCase(1,11));
     console.log(softWare);
@@ -46,6 +50,7 @@
     y guardarla en una variable (utilizar indexOf). */
 
     console.log('2.e')
+    
     var name1 = 'Eliezer Alberto';
     var resul = (name1.indexOf(' '));
     console.log('The result is: ' + resul);
@@ -56,6 +61,7 @@
     toLowerCase y el operador +). */
     
     console.log('2.f');
+    
     var finalString = 'software professional';
     var strOne = finalString.toUpperCase(0).substring(0,1) + (finalString.substring(1,8).toLowerCase(1,8));
     var strSpace = finalString.indexOf(' ');
