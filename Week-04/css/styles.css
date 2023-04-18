@@ -1,12 +1,7 @@
-/************ Body ************/
-
 body {
     width: 100vw;
     font-family: roboto;
-    
 }
-
-/************ Main ************/
 
 header {
     background-color: #373867;
@@ -20,7 +15,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .header-logo img {
@@ -36,8 +30,6 @@ header {
     justify-content:center;
     align-items: center;
 }
-
-/************ Aside Section ************/
 
 aside {
     display:none;
@@ -117,8 +109,6 @@ aside {
     margin: 10px;
 }
 
-/************ Get-Fit Section ************/
-
 .strong {
     display: flex;
     flex-direction: column;
@@ -153,8 +143,6 @@ aside {
     margin: 0 auto;
 }
 
-/************ Options Section ************/
-
 .option-container {
     background-color: #AACE9B;
     display: flex;
@@ -187,8 +175,6 @@ aside {
     display: none;
     color:#fff
 }
-
-/************ Forms Section ************/
 
 .box-forms {
     display: flex;
@@ -251,8 +237,6 @@ aside {
     height: 37px;
 }
 
-/************ History Section ************/
-
 .box-history {
     display: flex;
     background-color: #AACE9B;
@@ -273,8 +257,6 @@ aside {
     color: #fff;
     font-size: 24px;
 }
-
-/************ Activities Section ************/
 
 .activities {
     display: flex;
@@ -321,8 +303,6 @@ aside {
     padding-right: 50px;
 }
 
-/************ Footer  ************/
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -351,11 +331,8 @@ aside {
     height: 34px;
 }
 
-/************ Queries ************/
-
-/************ Breakpoint 600px ************/
-
-/************ Header ************/
+    /* Queries 
+    Breakpoint 600px */
 
 @media only screen and (min-width: 600px) {
     header {
@@ -370,9 +347,6 @@ aside {
         padding-left: 12px;
         margin-left: 12px;
     }
-}
-
-    /************ Get-Fit Section ************/
     
     .get-fit {
         padding: 12px;
@@ -411,9 +385,7 @@ aside {
         height: 182px;
         margin: auto 30px;
         justify-content: center;
-}
-
-    /************ Options Section ************/
+    }
 
     .option-container {
         background-color: #AACE9B;
@@ -460,8 +432,6 @@ aside {
         color:#fff;
         padding-left: 15px;
     }
-
-    /************ History Section ************/
     
     .history h3 {
         padding-top: 10px;
@@ -473,9 +443,7 @@ aside {
         padding: 30px;
         color: #fff;
         font-size: 24px;
-}
-
-    /************ Activities Section ************/
+    }
 
     .activities-box {
         display: flex;
@@ -512,10 +480,8 @@ aside {
         padding-left: 70px;
         padding-right: 50px;
     }
-
-    /************ Breakpoint 1024px ************/
-
-    /************ Header ************/
+}
+    /* Breakpoint 1024px */
 
 @media only screen and (min-width: 1024px) {
     
@@ -533,9 +499,7 @@ aside {
         display: none;
         padding-left: 12px;
         margin-left: 12px;
-    }
-
-    /************ Header ************/    
+    }   
 
     aside {
         display: flex;
@@ -547,7 +511,6 @@ aside {
         top: 0;
         left: 0;
         padding-top: 20px;
-
     }
     
     .side-bar h3 {
@@ -602,7 +565,7 @@ aside {
         color: #fff;
         text-transform: uppercase;
     }
-    
+
     .contact-id img {
         display: flexbox;
         text-align: center;
@@ -619,8 +582,6 @@ aside {
         color: #fff;
         margin: 10px;
     }
-
-    /************ Get-Fit Section ************/
     
     .get-fit {
         padding: 12px;
@@ -660,8 +621,6 @@ aside {
         margin: auto 50px;
         justify-content: center;
     }
-
-    /************ Options Section ************/
 
     .option-container {
         background-color: #AACE9B;
@@ -770,8 +729,6 @@ aside {
         width: 90px;
         height: 37px;
     }
-
-    /************ History Section ************/
     
     .history h3 {
         padding-top: 10px;
@@ -784,8 +741,6 @@ aside {
         color: #fff;
         font-size: 24px;
     }
-
-    /************ Activities Section ************/
     
     .activities {
         overflow-x: hidden;
@@ -793,7 +748,6 @@ aside {
         background-color: #D9D9D9;
         margin: 0px;
         flex-direction: row;
-        
     }
     .activities div {
         float: left;
@@ -806,8 +760,6 @@ aside {
         border:#D9D9D9;
         border-top: 10px;
     }
-
-    /************ Footer  ************/
 
     .footer {
         display: flex;

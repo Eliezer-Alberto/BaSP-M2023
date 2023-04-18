@@ -82,15 +82,51 @@ The **Footer** contains no more than the **Copyright** information on the left, 
 
 
 ## Week-03
-## Stylesheet
+## Stylesheet on CSS
 By this stage, there were added mostly updates concerning to the styling of the previous index.html descripted above.
 
 In order to give it all the styles, it was applied through the use of external CSS stylesheet on a separated file and it take the style of the design created on Figma. 
 
 ## Week-04
-## Stylesheet and Media Queries.
+## Stylesheet and Media Queries on CSS.
 
 By the time of the Week-04 there were added some changes to the stylesheet created on the previous week. In this case, it was requested to use the Flexbox tool and it was applied to the same stylesheet mentioned before.
 
 Regarding the new changes that were added to this project, they have to do with the Media Queries. It is a very useful tool that allow the webpage user, to use it from different devices because it configures different layouts throught the use of breakpoints; for Mobile first and then for other devices with a bigger screen.
+
+## Week-05
+## Java Script.
+**Week-04-CSS Updated.**
+
+
+As far as the week 05 concerns, the assignment is devided into two activities
+
+On the one hand, taking into account the feedbacks given by the tutors, of the week-04. They were needed to be updated with respect to the corrections of each one. In order to send it again in the Week-05.
+
+
+On the other hand, it was requested to solve 6 series of exercises on Java Script. 
+
+First of all, it was created a new folder called Week-05 in which there is a new index.html file, linked to the 6 JS files corresponding to each one of the series of exercises.
+
+The exercises were maden in the following order;
+
+*01-vairiables-and-operatos.*
+
+*02-strings.*
+
+*03-arrays.*
+
+*04-if-else.*
+
+*05-for.*
+
+*06-functions.*
+
+
+
+**GitHub Pages.**
+
+The access link to the exercises of the Week-05 is bellow.
+
+https://eliezer-alberto.github.io/BaSP-M2023/Week-05/index.html
 
