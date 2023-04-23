@@ -1,10 +1,16 @@
-var newElement = document.createElement('Input');
-newElement.setAttribute('name', 'myInput');
+// var newElement = document.createElement('Input');
+// newElement.setAttribute('name', 'myInput');
+
+function validEmail()
+    
 
 
-var emailInput = document.querySelector('input[email="email"]')
-emailInput.onblur = function () {
-    console.log('Blur')
-}
-//     emailInput.classList.add('backround-color-black')
-// }
+
+    // var emailInput = document.getElementsByClassName('.title');
+
+  
+    // emailInput.classList.add('title')
+
+
+    // var title = document.querySelector('title')
+    // title.classList.remove('title')
