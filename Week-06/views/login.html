@@ -20,7 +20,7 @@
         </h1>
     </header>
     <main class="main-login">
-        <form>
+        <form id="form">
             <div class="sign-in">
                 <div class="title">
                     <img class="back" src="/Assets/Images/arrow.png" alt="back">
@@ -28,26 +28,36 @@
                         Sign In
                     </h1>
                 </div>
-                <input class="email" type="text" placeholder="Email">
-                <input type="text" placeholder="Contraseña">
-                <p>
+                <div>
+                    <input id="email" type="text" placeholder="Email">
+                    <span class="error"></span>
+                </div>    
+                <div>
+                    <input id="password" type="password" placeholder="Password">
+                    <span class="error"></span>
+                </div>
+                <p class="forgotten">
                     <a href="">
                     Have you forgotten the password?
                     </a>
                 </p>
-                <p>
-                    <img src="/Assets/Images/Enabled.png" alt="click">
-                    Remember me
-                </p>
-                <p>
-                    Don't you have an account?
-                </p>
-                <p>
-                    <a href="/Week-06/views/sign-up.html">
-                        click here to become a member
-                    </a>
-                </p>
-                <button class="cont-login"> 
+                <div class="remember">
+                    <img class="click" src="/Assets/Images/Enabled.png" alt="click">
+                    <p>
+                        Remember me
+                    </p>
+                </div>
+                <div class="create-account">
+                    <p>
+                        Don't you have an account?
+                    </p>
+                    <p>
+                        <a href="/Week-06/views/sign-up.html">
+                            click here to become a member
+                        </a>
+                    </p>
+                </div>
+                <button class="cont-login" type="submit" value="Continue"> 
                     Continue
                 </button>
             </div>

@@ -5,19 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="../css/sign-up.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <script src="../js/sign-up.js"></script>
+    <link rel="stylesheet" href="/Week-06/css/sign-up.css">
+    <link rel="stylesheet" href="/Week-06/css/header.css">
+    <link rel="stylesheet" href="/Week-06/css/footer.css">
+    <script src="/Week-06/js/sign-up.js"></script>
 </head>
 <body>
     <header>
         <h1 class="header-logo">
-            <img src="../Assets/Images/logo.png" alt="MegaRocket">
+            <img src="/Assets/Images/logo.png" alt="MegaRocket">
         </h1>
         <h1 class="btn-menu">
-            <img src="../Assets/Images/icon.png" alt="a menu icon">
+            <img src="/Assets/Images/icon.png" alt="a menu icon">
         </h1>
     </header>
+    <main>
+        <form>
+            <div class="sign-up-container">
+                <div class="title">
+                    <img class="back" src="/Assets/Images/arrow.png" alt="back">
+                    <h1> 
+                        Register
+                    </h1>
+                </div>
+                <div class="form-container">
+                    <div class="sign-up">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                        <label for="surname">Surname:</label>
+                        <input type="text" id="surname" name="surname">
+                        <label for="Id">Id Number:</label>
+                        <input type="number" id="idNumber" name="id">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                        <label for="Date">Birth Date:</label>
+                        <input type="datetime" id="birth" name="birthdate">
+                    </div>
+                    <div class="sign-up">
+                        <label for="Phone">Phone:</label>
+                        <input type="number" id="phone" name="phone-number">
+                        <label for="Address">Address:</label>
+                        <input type="text" id="address" name="address">
+                        <label for="Location">Location:</label>
+                        <input type="text" id="location" name="location">
+                        <label for="Postal">Postal Code:</label>
+                        <input type="number" id="postal" name="code">
+                        <label for="password">Confirm Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                </div>
+            </div>
+            <div class="btn-sign-up">   
+                <button type="submit">Continue</button>
+            </div> 
+        </form>
+    </main>
+    <footer class="footer">
+        <h5>
+            Copyright © 2023 MegaRocket SA. All rights reserved.
+        </h5>
+        <div class="social">
+            <a href="https://www.linkedin.com/"><img src="/Assets/Images/linkedIn.png" alt="LinkedIn icon"></a>
+            <a href="https://www.facebook.com/"><img src="/Assets/Images/facebook.png" alt="Facebooc icon"></a>
+            <a href="https://www.instagram.com/"><img src="/Assets/Images/instagram.png" alt="Instagram icon"></a>
+        </div>
+    </footer>
 </body>
 </html>

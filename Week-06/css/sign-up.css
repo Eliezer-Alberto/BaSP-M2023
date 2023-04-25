@@ -1,0 +1,91 @@
+body {
+    width: 100vw;
+    background-color: #f4f4f4;
+}
+
+/* .signUp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+} */
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    justify-content: justify;
+}
+
+.title img {
+  justify-content: left;
+  display: flex;
+  align-items: center;
+  height: 40px ;
+  width: 32px;
+  margin: 5%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+  align-self: flex-start;
+}
+
+.title h1 {
+  color: #2C8008;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=number], input[type=datetime] {
+  width: 228px;
+  height: 43px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  
+label {
+  color: #AACE9B;
+  text-align: left;
+  justify-content: left;
+}
+
+
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  width: 327px;
+  height: 48px;
+  font-size: 16px;
+  }
+  
+button[type=submit]:hover {
+  background-color: #45a049;
+  }
+  
+@media only screen and (min-width: 1024px) {
+    
+  .form-container {
+    display: flex;
+    justify-content: space-around;
+  } 
+}
