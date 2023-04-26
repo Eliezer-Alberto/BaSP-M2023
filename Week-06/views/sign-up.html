@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="/Week-06/css/sign-up.css">
     <link rel="stylesheet" href="/Week-06/css/header.css">
     <link rel="stylesheet" href="/Week-06/css/footer.css">
+    <link rel="stylesheet" href="/Week-06/css/reset.css">
     <script src="/Week-06/js/sign-up.js"></script>
 </head>
 <body>
     <header>
         <h1 class="header-logo">
-            <img src="/Assets/Images/logo.png" alt="MegaRocket">
+            <a href="/Week-06/views/index.html"><img src="/Assets/Images/logo.png" alt="MegaRocket"></a>
         </h1>
         <h1 class="btn-menu">
             <img src="/Assets/Images/icon.png" alt="a menu icon">
@@ -23,7 +24,7 @@
         <form>
             <div class="sign-up-container">
                 <div class="title">
-                    <img class="back" src="/Assets/Images/arrow.png" alt="back">
+                    <a href="/Week-06/views/login.html"><img class="back" src="/Assets/Images/arrow.png" alt="back"></a>
                     <h1> 
                         Register
                     </h1>
@@ -31,29 +32,58 @@
                 <div class="form-container">
                     <div class="sign-up">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" required>
+                        <span class="error"></span>
+                    </div>        
+                    <div class="sign-up">
                         <label for="surname">Surname:</label>
-                        <input type="text" id="surname" name="surname">
+                        <input type="text" id="surname" name="surname" required>
+                        <span class="error"></span>
+                    </div>
+                    <div class="sign-up">
                         <label for="Id">Id Number:</label>
-                        <input type="number" id="idNumber" name="id">
+                        <input type="text" id="idNumber" name="id" required>
+                        <span class="error"></span>
+                    </div>
+                    <div class="sign-up">   
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
+                        <input type="text" id="email" name="email" required>
+                        <span class="error"></span>
+                    </div>
+                    <div class="sign-up"> 
                         <label for="password">Password:</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
+                        <span class="error"></span>
+                    </div>     
+                    <div class="sign-up">    
                         <label for="Date">Birth Date:</label>
-                        <input type="datetime" id="birth" name="birthdate">
+                        <input type="date" id="birth" name="birthdate" required>
+                        <span class="error"></span>
                     </div>
                     <div class="sign-up">
                         <label for="Phone">Phone:</label>
-                        <input type="number" id="phone" name="phone-number">
+                        <input type="text" id="phone" name="phone-number" required>
+                        <span class="error"></span>
+                    </div>     
+                    <div class="sign-up">     
                         <label for="Address">Address:</label>
-                        <input type="text" id="address" name="address">
+                        <input type="text" id="address" name="address" required>
+                        <span class="error"></span>
+                    </div>
+                    <div class="sign-up">  
                         <label for="Location">Location:</label>
-                        <input type="text" id="location" name="location">
+                        <input type="text" id="location" name="location" required>
+                        <span class="error"></span>
+                    </div>     
+                    <div class="sign-up">     
                         <label for="Postal">Postal Code:</label>
-                        <input type="number" id="postal" name="code">
+                        <input type="text" id="postal" name="code" required>
+                        <span class="error"></span>     
+                    </div>
+                    <div class="sign-up">  
                         <label for="password">Confirm Password:</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
+                        <span class="error"></span>
                     </div>
                 </div>
             </div>

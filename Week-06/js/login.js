@@ -1,11 +1,8 @@
 var login = document.getElementsByClassName('.main-login')
-var signin = document.getElementsByClassName('.sign-in')
-var title = document.getElementsByClassName('.title')
-// var email = document.getElementsById('#email'); 
-// var password = document.getElementsById('#password')
+var signin = document.getElementsByClassName('.sign-in');
+var title = document.getElementsByClassName('.title');
 var contLogin = document.getElementsByClassName('.cont-login');
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-
 
 function validateEmail(email) {
     var regex = new RegExp(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/);
@@ -41,7 +38,6 @@ emailInput.addEventListener('focus', function (event) {
     spanError.classList.add('hidden');
 })
 
-
 var passwordInput = document.getElementById('password')
 passwordInput.addEventListener('blur',function (event) {
     if (validatePassword(passwordInput.value)) {
@@ -57,7 +53,6 @@ passwordInput.addEventListener('focus', function (event) {
     var spanError = passwordInput.parentElement.querySelector('span');
     spanError.classList.add('hidden');
 })
-
 
     console.log('holis')
 

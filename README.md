@@ -130,3 +130,22 @@ The access link to the exercises of the Week-05 is bellow.
 
 https://eliezer-alberto.github.io/BaSP-M2023/Week-05/index.html
 
+
+## Week-06
+## Java Script.
+**JavaScript DOM.**
+
+
+By the stage of the Week-06, the assignment consists on the following.
+
+Using an empty requirements document, that was given by the tutors to each team. It was required to write there the necessary validations of inputs of the Login and Sign Up layouts for this week 06.
+
+In order to solve the assignment of the week 06, it was taken the project folder done for the week 04 to paste it on a new folder, rename it to week-06 and from there make the activities of 6th problematic.
+
+Following the same design and screenflow of the project on Figma that was made for the 1st week, now it is required to create these two layouts mentioned before and make all their validations from Java Script by manipulating the DOM. 
+
+**GitHub Pages.**
+
+The access link to the activities of the Week-06 is bellow.
+
+https://eliezer-alberto.github.io/BaSP-M2023/Week-06/views/index.html

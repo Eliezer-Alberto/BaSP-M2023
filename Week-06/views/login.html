@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="/Week-06/css/login.css">
     <link rel="stylesheet" href="/Week-06/css/header.css">
     <link rel="stylesheet" href="/Week-06/css/footer.css">
+    <link rel="stylesheet" href="/Week-06/css/reset.css">
     <script defer src="/Week-06/js/login.js"></script>
 </head>
 <body>
     <header>
         <h1 class="header-logo">
-            <img src="/Assets/Images/logo.png" alt="MegaRocket">
+            <a href="/Week-06/views/index.html"><img src="/Assets/Images/logo.png" alt="MegaRocket"></a>
         </h1>
         <h1 class="btn-menu">
             <img src="/Assets/Images/icon.png" alt="a menu icon">
@@ -23,17 +24,17 @@
         <form id="form">
             <div class="sign-in">
                 <div class="title">
-                    <img class="back" src="/Assets/Images/arrow.png" alt="back">
-                    <h1> 
+                    <a href="/Week-06/views/index.html"><img class="back" src="/Assets/Images/arrow.png" alt="back"></a>
+                    <h1>
                         Sign In
                     </h1>
                 </div>
                 <div>
-                    <input id="email" type="text" placeholder="Email">
+                    <input id="email" type="text" placeholder="Email" required>
                     <span class="error"></span>
                 </div>    
                 <div>
-                    <input id="password" type="password" placeholder="Password">
+                    <input id="password" type="password" placeholder="Password" required>
                     <span class="error"></span>
                 </div>
                 <p class="forgotten">
@@ -63,5 +64,15 @@
             </div>
         </form>
     </main>
+    <footer class="footer">
+        <h5>
+            Copyright © 2023 MegaRocket SA. All rights reserved.
+        </h5>
+        <div class="social">
+            <a href="https://www.linkedin.com/"><img src="/Assets/Images/linkedIn.png" alt="LinkedIn icon"></a>
+            <a href="https://www.facebook.com/"><img src="/Assets/Images/facebook.png" alt="Facebooc icon"></a>
+            <a href="https://www.instagram.com/"><img src="/Assets/Images/instagram.png" alt="Instagram icon"></a>
+        </div>
+    </footer>
 </body>
 </html>
