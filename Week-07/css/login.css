@@ -1,0 +1,152 @@
+body {
+    width: 100vw;
+    background-color: #f4f4f4;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 452px;
+    height: 505px;
+    margin: auto;
+    margin-top: 281px;
+    margin-bottom: 196px;
+}
+
+.sign-in img {
+    display: flex;
+    position: relative;
+    align-items: left;
+    flex-direction: row; 
+}
+
+.back {
+    display: flex;
+    position: relative;
+    align-items: left;
+    flex-direction: row;
+}
+
+.sign-in input {
+    width: 241px;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #AACE9B;
+    margin: 13px;
+}
+
+.forgotten {
+    margin-top: 0;
+}
+
+.remember {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+}
+
+.remember img {
+    margin-right: 10px;
+}
+
+.create-account p {
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 280px;
+    align-self: flex-start;
+}
+
+.title img {
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    height: 40px ;
+    width: 32px;
+    margin: 5%;
+}
+
+.title h1 {
+    color: #2C8008;
+    font-size: 36px;
+    margin-top: 25%;
+}
+
+.click {
+    display: inline-block;
+    flex-direction: row;
+}
+
+.error {
+    display: block;
+    text-align: start;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.cont-login {
+    background-color: #AACE9B;
+    color: #ffffff;
+    width: 290px;
+    height: 48px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-color: #AACE9B;
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    form {
+        flex-basis: 50%;
+    }
+    
+    .form-container {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #AACE9B;
+    }
+  
+    .footer h5 {
+      font-size: 12px;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .social {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 5px;   
+    }
+  
+    .social img{
+      display: flex;
+      flex-direction: row;
+      padding: 0 16px;
+      align-self: center;
+      width: 34px;
+      height: 34px;
+      padding-top: 5px;
+    }
+  
+  }
