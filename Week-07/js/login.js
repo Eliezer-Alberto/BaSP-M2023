@@ -10,23 +10,31 @@ function validateEmail(email) {
 }
 
 function validatePassword(password) {
+    var minuscula = false
+    var mayuscula = false
+    var numeros = false
     if (!password){
         return false
     }
     for (var i=0; i<password.length; i++) {
-        var char = password.charCodeAt(i);
-        if (!(char >= 97 && char <= 122) || !(char >= 48 && char <= 57) || !(char >= 65 && char <= 90)) {
-            return false
+        if ((password[i] >= 'a' && password[i] <= 'z') || (password[i] >= 'A' && password[i] <= 'Z') || (password[i] >= '0' && password[i] <= '9'))  {
+        if (password[i] >= 'a' && password[i] <= 'z')
+            minuscula = true
+        if (password[i] >= 'A' && password[i] <= 'Z')
+            mayuscula = true
+        if (password[i] >= '0' && password[i] <= '9')
+            numeros = true
         }
-    }
-    return true
+    }   console.log(minuscula, mayuscula, numeros)
+    if (minuscula && mayuscula && numeros)
+        return true  
+    else 
+        return false
 }
 
 var emailInput = document.getElementById('email')
 emailInput.addEventListener('blur',function (event) {
-    if (validateEmail(emailInput.value)) {
-        alert('Valid Email')
-    } else {
+    if (!validateEmail(emailInput.value)) {
         var spanError = emailInput.parentElement.querySelector('span');
         spanError.textContent = 'Invalid Email';
         spanError.classList.remove('hidden');
@@ -40,9 +48,7 @@ emailInput.addEventListener('focus', function (event) {
 
 var passwordInput = document.getElementById('password')
 passwordInput.addEventListener('blur',function (event) {
-    if (validatePassword(passwordInput.value)) {
-        alert('Password valid')
-    } else {
+    if (!validatePassword(passwordInput.value)) {
         var spanError = passwordInput.parentElement.querySelector('span');
         spanError.textContent = 'Invalid Password';
         spanError.classList.remove('hidden');
@@ -54,9 +60,29 @@ passwordInput.addEventListener('focus', function (event) {
     spanError.classList.add('hidden');
 })
 
-    console.log('holis')
-
+    
 var form = document.getElementById('form');
 form.addEventListener('submit', function(event) {
     event.preventDefault()
-})
+    if (validateEmail(emailInput.value) && validatePassword(passwordInput.value)) {
+        alert('Valid email and valid password');
+        fetch('https://api-rest-server.vercel.app/login?email=' + emailInput.value + '&password=' + passwordInput.value)
+        .then(function(response){
+            return response.json()
+        })
+        .then(function(data){
+            console.log(data)
+            if(data.success){
+                alert(data.msg)
+            } else{
+                if(data.msg){
+                    throw new Error(data.msg)
+                }
+            }
+        })
+        .catch(function(error){
+            alert(error)
+        });
+    }
+});
+
