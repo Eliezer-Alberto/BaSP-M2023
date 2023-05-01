@@ -3,12 +3,10 @@ var signin = document.getElementsByClassName('.sign-in');
 var title = document.getElementsByClassName('.title');
 var contLogin = document.getElementsByClassName('.cont-login');
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-
 function validateEmail(email) {
     var regex = new RegExp(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/);
     return regex.test(email);
 }
-
 function validatePassword(password) {
     var minuscula = false
     var mayuscula = false
@@ -31,7 +29,6 @@ function validatePassword(password) {
     else 
         return false
 }
-
 var emailInput = document.getElementById('email')
 emailInput.addEventListener('blur',function (event) {
     if (!validateEmail(emailInput.value)) {
@@ -40,12 +37,10 @@ emailInput.addEventListener('blur',function (event) {
         spanError.classList.remove('hidden');
     }
 })
-
 emailInput.addEventListener('focus', function (event) {
     var spanError = emailInput.parentElement.querySelector('span');
     spanError.classList.add('hidden');
 })
-
 var passwordInput = document.getElementById('password')
 passwordInput.addEventListener('blur',function (event) {
     if (!validatePassword(passwordInput.value)) {
@@ -54,13 +49,10 @@ passwordInput.addEventListener('blur',function (event) {
         spanError.classList.remove('hidden');
     }
 })
-
 passwordInput.addEventListener('focus', function (event) {
     var spanError = passwordInput.parentElement.querySelector('span');
     spanError.classList.add('hidden');
 })
-
-    
 var form = document.getElementById('form');
 form.addEventListener('submit', function(event) {
     event.preventDefault()
