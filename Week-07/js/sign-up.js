@@ -1,5 +1,4 @@
 window.onload = function(){
-
     var nameInput = document.getElementById('name');
     var surNameInput = document.getElementById('surname');
     var idNum = document.getElementById('idNumber');
@@ -83,7 +82,7 @@ form.addEventListener('submit', function(event) {
         + phoneNum.value + '&address=' 
         + address.value + '&city='
         + location.value + '&zip=' 
-        + postalCode.value + '&confirmPass=' 
+        + postalCode.value + '&password=' 
         + passwordConfirm.value)
         .then(function(response){
             return response.json()
@@ -91,12 +90,24 @@ form.addEventListener('submit', function(event) {
         .then(function(data){
             if(data.success){
                 alert(data.msg)
+                localStorage.setItem('email', emailInput.value);
+                localStorage.setItem('password', passwordInput.value);
+                localStorage.setItem('name', nameInput.value);
+                localStorage.setItem('lastName', surNameInput.value);
+                localStorage.setItem('dni', idNum.value);
+                localStorage.setItem('dob', formattedDate.value);
+                localStorage.setItem('phone', phoneNum.value);
+                localStorage.setItem('address', address.value);
+                localStorage.setItem('city', location.value);
+                localStorage.setItem('zip', postalCode.value);
+                localStorage.setItem('password', passwordConfirm.value);
             } else{
-            var error='';
-            for (var i = 0; i < data.errors.length; i++) {
-                error=error +' '+ JSON.stringify(data.errors[i].msg);
-            }
-                throw new Error(error) 
+                alert('Something went wrong', data.msg)
+            // var error='';
+            // for (var i = 0; i < data.errors.length; i++) {
+            //     error=error +' '+ JSON.stringify(data.errors[i].msg);
+            // }
+            //     throw new Error(error) 
             }
         })
         .catch(function(error){

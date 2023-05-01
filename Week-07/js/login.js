@@ -23,7 +23,7 @@ function validatePassword(password) {
         if (password[i] >= '0' && password[i] <= '9')
             numeros = true
         }
-    }   console.log(minuscula, mayuscula, numeros)
+    }
     if (minuscula && mayuscula && numeros)
         return true  
     else 
@@ -58,18 +58,17 @@ form.addEventListener('submit', function(event) {
     event.preventDefault()
     if (validateEmail(emailInput.value) && validatePassword(passwordInput.value)) {
         alert('Valid email and valid password');
-        fetch('https://api-rest-server.vercel.app/login?email=' + emailInput.value + '&password=' + passwordInput.value)
+        fetch('https://api-rest-server.vercel.app/login?email=' 
+        + emailInput.value + '&password=' 
+        + passwordInput.value)
         .then(function(response){
             return response.json()
         })
         .then(function(data){
-            console.log(data)
             if(data.success){
                 alert(data.msg)
             } else{
-                if(data.msg){
-                    throw new Error(data.msg)
-                }
+                alert('Something went wrong', data.msg)
             }
         })
         .catch(function(error){
