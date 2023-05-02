@@ -57,7 +57,7 @@ var form = document.getElementById('form');
 form.addEventListener('submit', function(event) {
     event.preventDefault()
     if (validateEmail(emailInput.value) && validatePassword(passwordInput.value)) {
-        alert('Valid email and valid password');
+        alert('Your solicitude was successful. Welcome to MegaRocket!');
         fetch('https://api-rest-server.vercel.app/login?email=' 
         + emailInput.value + '&password=' 
         + passwordInput.value)
@@ -67,8 +67,10 @@ form.addEventListener('submit', function(event) {
         .then(function(data){
             if(data.success){
                 alert(data.msg)
+                localStorage.setItem('email', emailInput.value);
+                localStorage.setItem('password', passwordInput.value);
             } else{
-                alert('Something went wrong', data.msg)
+                alert('Something went wrong. ' + data.msg)
             }
         })
         .catch(function(error){

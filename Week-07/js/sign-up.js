@@ -10,11 +10,11 @@ window.onload = function(){
     var passwordConfirm = document.getElementById('passwordValid');
     var emailInput = document.getElementById('email')
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-function validateEmail(email) {
+    function validateEmail(email) {
     var regex = new RegExp(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/);
     return regex.test(email);
-}
-emailInput.addEventListener('blur',function () {
+    }
+    emailInput.addEventListener('blur',function () {
     if (validateEmail(emailInput.value)) {
     } else {
         var spanError = emailInput.parentElement.querySelector('span');
@@ -24,24 +24,30 @@ emailInput.addEventListener('blur',function () {
     if (emailInput.value.indexOf('') === -1){
         console.log('Wrong');
     }
-})
-emailInput.addEventListener('focus', function () {
+    })
+    emailInput.addEventListener('focus', function () {
     var spanError = emailInput.parentElement.querySelector('span');
     spanError.classList.add('hidden');
-})
-var passwordInput = document.getElementById('password')
+    })
+    var passwordInput = document.getElementById('password')
     passwordInput.addEventListener('blur',function () {
     if (!validatePassword(passwordInput.value)) {
         var spanError = passwordInput.parentElement.querySelector('span');
         spanError.textContent = 'Invalid Password';
         spanError.classList.remove('hidden');
     }
-})
-passwordInput.addEventListener('focus', function () {
+    })
+    passwordInput.addEventListener('focus', function () {
     var spanError = passwordInput.parentElement.querySelector('span');
     spanError.classList.add('hidden');
-})
-function validatePassword(password) {
+    })
+    nameInput.addEventListener('blur', function () {
+
+    })
+
+
+
+    function validatePassword(password) {
     var minuscula = false
     var mayuscula = false
     var numeros = false
@@ -64,26 +70,26 @@ function validatePassword(password) {
     else 
         return false
 }
-var form = document.getElementById('form');
-form.addEventListener('submit', function(event) {
+    var form = document.getElementById('form');
+    form.addEventListener('submit', function(event) {
     event.preventDefault()
     var date = birthDate.value;
     var dateEl = date.split('-');
     var formattedDate = dateEl[1]+'/'+dateEl[2]+'/'+dateEl[0];
     if (validateEmail(emailInput.value) && validatePassword(passwordInput.value)) {
-        alert('Valid email and valid password');
+        alert('Your solicitude was successful. Welcome to MegaRocket!');
         fetch('https://api-rest-server.vercel.app/signup?email=' 
-        + emailInput.value + '&password=' 
-        + passwordInput.value + '&name=' 
-        + nameInput.value + '&lastName=' 
-        + surNameInput.value + '&dni=' 
-        + idNum.value + '&dob=' 
-        + formattedDate + '&phone=' 
-        + phoneNum.value + '&address=' 
-        + address.value + '&city='
-        + location.value + '&zip=' 
-        + postalCode.value + '&password=' 
-        + passwordConfirm.value)
+            + emailInput.value + '&password=' 
+            + passwordInput.value + '&name=' 
+            + nameInput.value + '&lastName=' 
+            + surNameInput.value + '&dni=' 
+            + idNum.value + '&dob=' 
+            + formattedDate + '&phone=' 
+            + phoneNum.value + '&address=' 
+            + address.value + '&city='
+            + location.value + '&zip=' 
+            + postalCode.value + '&password=' 
+            + passwordConfirm.value)
         .then(function(response){
             return response.json()
         })
@@ -102,12 +108,12 @@ form.addEventListener('submit', function(event) {
                 localStorage.setItem('zip', postalCode.value);
                 localStorage.setItem('password', passwordConfirm.value);
             } else{
-                alert('Something went wrong', data.msg)
-            // var error='';
-            // for (var i = 0; i < data.errors.length; i++) {
-            //     error=error +' '+ JSON.stringify(data.errors[i].msg);
-            // }
-            //     throw new Error(error) 
+                alert('Something went wrong. ' + data.msg)
+            var error='';
+            for (var i = 0; i < data.errors.length; i++) {
+                error=error +' '+ JSON.stringify(data.errors[i].msg);
+            }
+                throw new Error(error) 
             }
         })
         .catch(function(error){

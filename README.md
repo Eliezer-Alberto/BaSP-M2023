@@ -149,3 +149,15 @@ Following the same design and screenflow of the project on Figma that was made f
 The access link to the activities of the Week-06 is bellow.
 
 https://eliezer-alberto.github.io/BaSP-M2023/Week-06/views/index.html
+
+
+## Week-07
+## Java Script.
+**APIs.**
+
+**Asynchronism**
+
+**Callbacks - Event Loop - Promises - Storages**
+
+
+For the assignment 07 it is necessary to keep working on the previous task. In order to do that, the folder 'Week-06' is copied to be renamed to 'Week-07' and from there make the new actrivities related to the following task. Which consists on extend the W06's forms, so that by pressing the confirmation buttons, the data loaded in them is sent to a web server through an HTTP request fron JavaScript. 
