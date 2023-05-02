@@ -3,6 +3,7 @@ var signin = document.getElementsByClassName('.sign-in');
 var title = document.getElementsByClassName('.title');
 var contLogin = document.getElementsByClassName('.cont-login');
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+
 function validateEmail(email) {
     var regex = new RegExp(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/);
     return regex.test(email);

@@ -155,9 +155,33 @@ https://eliezer-alberto.github.io/BaSP-M2023/Week-06/views/index.html
 ## Java Script.
 **APIs.**
 
-**Asynchronism**
+**Asynchronism.**
 
-**Callbacks - Event Loop - Promises - Storages**
+**Callbacks - Event Loop - Promises - Storages.**
 
+For the assignment 07 it is necessary to keep working on the previous task. In order to do that, the folder 'Week-06' is copied to be renamed to 'Week-07' and from there make the new actrivities related to the following task. Which consists on extend the W06's forms, so that by pressing the confirmation buttons, the data loaded in them is sent to a web server through an HTTP request fron JavaScript by the use of *Fetch* method. 
 
-For the assignment 07 it is necessary to keep working on the previous task. In order to do that, the folder 'Week-06' is copied to be renamed to 'Week-07' and from there make the new actrivities related to the following task. Which consists on extend the W06's forms, so that by pressing the confirmation buttons, the data loaded in them is sent to a web server through an HTTP request fron JavaScript. 
+For the *Sign Up* and the *Login* forms it is required the following:
+
+The request only should run if it passes all the form validations, if any input does not match with the validations the request should not run. 
+
+In the request all the form data should be sent as **query-params** following the format showed below;
+
+*.../login?name=eliezer&lasrName=alberto&...*
+
+Then, depending on the result.
+If the answer was successful:
+
+- Show an alert to indicate that the solicitude was done correctly.
+- Show in the same alert the obtained information from the answer
+
+If the answer was not successful:
+
+- Show an alert with an error message.
+- In the same alert, indicate which was the error.
+
+**GitHub Pages.**
+
+The access link to the activities of the Week-07 is bellow.
+
+https://eliezer-alberto.github.io/BaSP-M2023/Week-07/views/index.html
